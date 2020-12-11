@@ -1,0 +1,22 @@
+.user-profile{
+    display: inline-block;
+    background-color: ivory;
+    width: 100%;
+}
+
+img{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.info{
+    float: left;
+    margin-left: 40px;
+}
+
+.registerDate{
+    font-size: 75%;
+    font-style: italic;
+}
+

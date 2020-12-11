@@ -1,0 +1,23 @@
+.userList {
+    width: 40%; 
+    margin: 0 auto;
+    background-color: #ababab;
+}
+
+@media screen and (max-width: 1200px) {
+    .userList {
+        width: 60%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .userList {
+        width: 85%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .userList {
+        width: 99%; 
+    }
+}
