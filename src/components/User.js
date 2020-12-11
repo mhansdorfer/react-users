@@ -1,5 +1,5 @@
 import React from 'react';
-import "./User.css";
+import "../css/User.css";
 
 export default class User extends React.Component {
 

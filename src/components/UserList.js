@@ -1,6 +1,6 @@
 import React from 'react';
 import User from './User.js';
-import './UserList.css'
+import '../css/UserList.css'
 
 export default class UserList extends React.Component {
     
