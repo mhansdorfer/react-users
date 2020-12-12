@@ -1,7 +1,10 @@
 import React from 'react';
 import User from './User.js';
-import '../css/UserList.css'
+import UserDetails from './UserDetails.js';
+import '../css/UserList.css';
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+  
 export default class UserList extends React.Component {
     
     state = {
@@ -17,9 +20,18 @@ export default class UserList extends React.Component {
 
     render(){
         return (
-            <div className="userList">
-                {this.state.users.map((profile) => <User key={profile.login.uuid} {...profile}/>)}
-            </div>
+            <Router>
+                <Switch>
+                <Route path="/users/:userId">
+                    <UserDetails users={this.state.users}/>
+                </Route>
+                <Route path="/">
+                    <div className="userList">
+                       {this.state.users.map((profile) => <User key={profile.login.uuid} {...profile}/>)}
+                   </div>
+                </Route>
+                </Switch>
+            </Router>
         );
     }
 }
