@@ -1,7 +1,12 @@
 .userList {
+    background-color: #ababab;
+}
+
+.userListPLaceholder {
+    background-color: ivory;
     width: 40%; 
     margin: 0 auto;
-    background-color: #ababab;
+    padding: 20px;
 }
 
 @media screen and (max-width: 1200px) {
