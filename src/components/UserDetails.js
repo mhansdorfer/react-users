@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import User from './User.js'
-import '../css/User.css'
+import '../css/UserDetails.css'
+import Map from './Map.js';
 
 function UserDetails(props) {
     const {userId} = useParams();
@@ -15,6 +16,7 @@ function UserDetails(props) {
             <div className="userDetails">
                 <User {...user} background="aliceblue" />
             </div>
+            <Map coord={user.location.coordinates}/>
         </div>
     );
 }
