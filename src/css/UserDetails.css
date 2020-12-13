@@ -9,7 +9,7 @@
 
 .home {
     position: absolute;
-    top: 10px;
+    top: 8px;
     right: 50px;
 }
 
@@ -20,3 +20,26 @@
     margin: 0 auto; 
     height: 60vh;
   }
+
+  /*****************/
+
+  /******** Media query **************/
+
+  @media screen and (max-width: 1200px) {
+    .userDetails, .leaflet-container {
+        width: 75%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .userDetails, .leaflet-container {
+        width: 92%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .userDetails, .leaflet-container {
+        width: 99%; 
+    }
+}
+  

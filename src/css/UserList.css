@@ -4,25 +4,25 @@
 
 .userListPLaceholder {
     background-color: ivory;
-    width: 40%; 
+    width: 50%; 
     margin: 0 auto;
     padding: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-    .userList {
-        width: 60%; 
+    .userListPLaceholder {
+        width: 75%; 
     }
 }
 
 @media screen and (max-width: 768px) {
-    .userList {
-        width: 85%; 
+    .userListPLaceholder {
+        width: 92%; 
     }
 }
 
 @media screen and (max-width: 600px) {
-    .userList {
+    .userListPLaceholder {
         width: 99%; 
     }
 }
